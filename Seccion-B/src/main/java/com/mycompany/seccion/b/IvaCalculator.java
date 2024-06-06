@@ -9,5 +9,5 @@ package com.mycompany.seccion.b;
  * @author MICHELLE ARREAGA
  */
 public interface IvaCalculator {
-    
+    public double calculateIVA(ProductInterface product);
 }

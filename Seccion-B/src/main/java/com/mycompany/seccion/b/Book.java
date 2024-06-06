@@ -8,6 +8,30 @@ package com.mycompany.seccion.b;
  *
  * @author MICHELLE ARREAGA
  */
-public class Book {
+public class Book implements ProductInterface, IvaCalculator{
+    private String name;
+    private double price;
+    private double weight;
+
+    public Book(String name, double price, double weight) {
+        this.name = name;
+        this.price = price;
+        this.weight = weight;
+    }
     
+    @Override
+    public String getName() {
+        return name;
+    }
+    @Override
+    public double getPrice() {
+        return price;
+    }
+    
+    @Override
+    public double calculateIVA(ProductInterface product) {
+        return 0;
+    }
+
+
 }
